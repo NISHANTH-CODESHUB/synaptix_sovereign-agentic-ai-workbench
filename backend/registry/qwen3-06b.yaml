@@ -1,0 +1,31 @@
+id: qwen3-06b
+serve_name: qwen3:0.6b
+family: qwen3
+params: "0.6B"
+license: apache-2.0
+runtime: ollama
+tier: small
+modalities: [text]
+tool_calling: json_schema
+context: {native: 32768, served: 2048}
+footprint:
+  weights_mib: 400
+  kv_mib_per_1k_tok: {q8_0: 14}
+  compute_buffer_mib: 60
+  total_mib: 490
+  load_cost_s: 1.2
+skills:
+  general_qa: 38
+  doc_summarise: 34
+  structured_extract: 45
+  doc_draft: 30
+  code_write: 25
+  code_debug: 20
+  calculation: 28
+  kb_qa: 32
+  vision_doc: 0
+  vision_drawing: 0
+roles: [router, draft]
+notes: >
+  Stage-2 router judge and the fast lane that answers trivia without forcing a
+  model swap. Cheaper than the decision it makes.

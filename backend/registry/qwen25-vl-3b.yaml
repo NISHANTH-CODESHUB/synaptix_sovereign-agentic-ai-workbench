@@ -1,0 +1,33 @@
+id: qwen25-vl-3b
+serve_name: qwen2.5vl:3b
+family: qwen2.5-vl
+params: "3.8B"
+license: apache-2.0
+runtime: ollama
+tier: small
+modalities: [text, image]
+tool_calling: none
+context: {native: 32768, served: 4096}
+footprint:
+  weights_mib: 2180
+  mmproj_mib: 710
+  kv_mib_per_1k_tok: {q8_0: 55}
+  compute_buffer_mib: 210
+  total_mib: 3320
+  load_cost_s: 18.0     # MEASURED: heaviest swap in the fabric
+skills:
+  general_qa: 52
+  doc_summarise: 55
+  structured_extract: 66
+  doc_draft: 40
+  code_write: 30
+  code_debug: 25
+  calculation: 40
+  kb_qa: 45
+  vision_doc: 84
+  vision_drawing: 71
+roles: [vision]
+notes: >
+  Only model here that can see. Returns grounded regions, which is what the
+  click-to-source citation feature needs. Heaviest resident — the scheduler
+  batches vision work to amortise the swap.

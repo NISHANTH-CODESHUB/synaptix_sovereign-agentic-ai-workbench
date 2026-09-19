@@ -1,0 +1,82 @@
+{"c":"code_write","t":"Write a Python script to parse the DCS tag export CSV and flag any loop with more than 3 alarms per hour"}
+{"c":"code_write","t":"Script that reads the vibration log and plots trend for each bearing"}
+{"c":"code_write","t":"Generate code to compute NPSH available for a centrifugal pump across the flow range"}
+{"c":"code_write","t":"Write a function that converts our tank dip readings into volume using the strapping table"}
+{"c":"code_write","t":"Build a small tool to reconcile the daily production figures against the tank gauging sheet"}
+{"c":"code_write","t":"Automate renaming the inspection photos by CML number"}
+{"c":"code_write","t":"Write a program to calculate orifice plate sizing for the given flow conditions"}
+{"c":"code_write","t":"Create a script that extracts all PSV tag numbers from a CSV and sorts by set pressure"}
+{"c":"code_write","t":"Make a utility that merges the monthly energy meter readings into one sheet"}
+{"c":"code_write","t":"Write python to compute remaining life from thickness readings and corrosion rate"}
+{"c":"code_debug","t":"This VBA macro throws error 1004 when it hits the vendor sheet, what is wrong"}
+{"c":"code_debug","t":"My pandas groupby returns NaN for the shift totals, fix it"}
+{"c":"code_debug","t":"The script crashes with KeyError on the second file, debug this"}
+{"c":"code_debug","t":"Why does this loop give the wrong corrosion rate for negative values"}
+{"c":"code_debug","t":"Fix the index out of range error in this parser"}
+{"c":"code_debug","t":"This SQL query returns duplicate rows after I added the join, correct it"}
+{"c":"code_debug","t":"My matplotlib chart is empty even though the dataframe has rows"}
+{"c":"code_debug","t":"Getting a UnicodeDecodeError reading the old log file, how do I fix"}
+{"c":"doc_draft","t":"Draft a note for approval for the spares indent worth 42 lakh rupees"}
+{"c":"doc_draft","t":"Prepare an approval note for deviation from the standard inspection interval"}
+{"c":"doc_draft","t":"Write a letter to the vendor regarding delay in delivery of the heat exchanger tubes"}
+{"c":"doc_draft","t":"Draft the minutes of the safety committee meeting held last Tuesday"}
+{"c":"doc_draft","t":"Prepare a board presentation on the shutdown readiness status"}
+{"c":"doc_draft","t":"Draft a memo to all department heads about the revised hot work permit procedure"}
+{"c":"doc_draft","t":"Create a note for approval to hire an external inspection agency"}
+{"c":"doc_draft","t":"Write up the justification for emergency procurement of the pump seal"}
+{"c":"doc_draft","t":"Draft a circular announcing the revised gate pass timings"}
+{"c":"doc_draft","t":"Prepare a covering note for the capex proposal to the director"}
+{"c":"doc_summarise","t":"Summarise the last three shutdown reports for Unit 2"}
+{"c":"doc_summarise","t":"Give me the key points from this 40 page tender document"}
+{"c":"doc_summarise","t":"Condense the vendor correspondence into a one page brief"}
+{"c":"doc_summarise","t":"What are the main findings across these inspection reports"}
+{"c":"doc_summarise","t":"Summarise this safety audit report for the management review"}
+{"c":"doc_summarise","t":"Give me an executive summary of the annual maintenance plan"}
+{"c":"doc_summarise","t":"Shorten this technical specification into the essential requirements"}
+{"c":"doc_summarise","t":"Brief me on what happened in the last turnaround"}
+{"c":"structured_extract","t":"Pull out the thickness readings and CML numbers from this UT report"}
+{"c":"structured_extract","t":"Extract all the line numbers and their design pressures into a table"}
+{"c":"structured_extract","t":"List every observation with its severity and target date from this audit"}
+{"c":"structured_extract","t":"Get me the vendor name, PO number and amount from these invoices"}
+{"c":"structured_extract","t":"Tabulate the equipment tag, service and last inspection date"}
+{"c":"structured_extract","t":"Extract the instrument ranges and set points into a spreadsheet"}
+{"c":"structured_extract","t":"Give me a structured list of all non conformances raised"}
+{"c":"structured_extract","t":"Pull the material of construction for each item in the bill of materials"}
+{"c":"calculation","t":"What line size is needed for 180 cubic metre per hour of naphtha at 0.68 specific gravity with maximum velocity 3 metre per second"}
+{"c":"calculation","t":"Calculate the remaining life given nominal thickness 9.5 mm, measured 6.1 mm and corrosion rate 0.21 mm per year"}
+{"c":"calculation","t":"Work out the relief load for the fire case on this vessel"}
+{"c":"calculation","t":"Compute the pressure drop across 120 metres of 6 inch line carrying water at 200 cubic metre per hour"}
+{"c":"calculation","t":"Find the minimum required thickness for this shell as per the design pressure"}
+{"c":"calculation","t":"How much steam is needed to raise this stream from 40 to 120 degrees celsius"}
+{"c":"calculation","t":"Calculate the heat duty of the exchanger from these flow and temperature figures"}
+{"c":"calculation","t":"Determine the annual energy saving in rupees if we reduce the flare by 2 percent"}
+{"c":"kb_qa","t":"What is the validity of a hot work permit as per our SOP"}
+{"c":"kb_qa","t":"According to our standard what is the inspection interval for pressure vessels"}
+{"c":"kb_qa","t":"What does our procedure say about work at height clearance"}
+{"c":"kb_qa","t":"Which document covers the confined space entry requirements"}
+{"c":"kb_qa","t":"What is the approval limit for a deputy general manager as per the delegation of authority"}
+{"c":"kb_qa","t":"As per our manual who signs off on a deviation from the inspection schedule"}
+{"c":"kb_qa","t":"What are the retirement thickness criteria in our inspection SOP"}
+{"c":"kb_qa","t":"Find the clause about vendor performance evaluation in our procurement policy"}
+{"c":"general_qa","t":"Explain the difference between a PSV and a rupture disc"}
+{"c":"general_qa","t":"What does NPSH mean and why does it matter for pumps"}
+{"c":"general_qa","t":"How does a hydrocracker differ from a fluid catalytic cracker"}
+{"c":"general_qa","t":"Give me a short explanation of risk based inspection"}
+{"c":"general_qa","t":"What is the purpose of a nitrogen blanket on a storage tank"}
+{"c":"general_qa","t":"Explain what causes chloride stress corrosion cracking"}
+{"c":"general_qa","t":"What is the difference between preventive and predictive maintenance"}
+{"c":"general_qa","t":"Tell me about the typical stages in a refinery turnaround"}
+{"c":"vision_doc","t":"Read this scanned inspection report and tell me the observations in section 4"}
+{"c":"vision_doc","t":"What does this scanned memo say about the delivery schedule"}
+{"c":"vision_doc","t":"Extract the table from this scanned page"}
+{"c":"vision_doc","t":"This is a photo of a handwritten site diary, transcribe the entries"}
+{"c":"vision_doc","t":"Read the values in this scanned test certificate"}
+{"c":"vision_doc","t":"What is written in the remarks column of this scanned sheet"}
+{"c":"vision_doc","t":"Tell me the findings recorded in this scanned report page"}
+{"c":"vision_drawing","t":"List all the PSVs shown on this P and ID sheet with their set pressures"}
+{"c":"vision_drawing","t":"What instruments are on this line in the drawing"}
+{"c":"vision_drawing","t":"Identify the equipment tags visible in this engineering drawing"}
+{"c":"vision_drawing","t":"From this P and ID, what is the service of vessel V 101"}
+{"c":"vision_drawing","t":"Check this isometric drawing and list the valves"}
+{"c":"vision_drawing","t":"What does this piping layout show for the pump discharge"}
+{"c":"vision_drawing","t":"Read the title block of this drawing and give me the revision"}

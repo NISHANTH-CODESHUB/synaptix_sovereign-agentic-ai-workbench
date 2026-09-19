@@ -1,0 +1,37 @@
+id: qwen3-4b
+serve_name: qwen3:4b
+family: qwen3
+params: "4.0B"
+license: apache-2.0
+runtime: ollama
+tier: small
+modalities: [text]
+tool_calling: json_schema
+context: {native: 262144, served: 6144}
+footprint:            # MEASURED on RTX 3050 Laptop 4 GiB, KV=q8_0 + flash-attn
+  weights_mib: 2496
+  kv_mib_per_1k_tok: {q8_0: 75}
+  compute_buffer_mib: 248
+  total_mib: 3400          # ollama ps: 3.4 GB resident at ctx 6144
+  gpu_offload_pct: 67      # 4094 MiB card cannot hold all of it; rest on CPU
+  measured_tps: 14.0       # was 7.8 at ctx 8192 with fp16 KV
+  load_cost_s: 7.0
+skills:
+  general_qa: 74
+  doc_summarise: 71
+  structured_extract: 76
+  doc_draft: 78
+  code_write: 58
+  code_debug: 51
+  calculation: 70
+  kb_qa: 75
+  vision_doc: 0
+  vision_drawing: 0
+roles: [general, reasoning, drafting, extract]
+notes: >
+  Primary lane. NOTE: this is the hybrid-reasoning tag and it IGNORES
+  ollama's think:false - verified, content came back beginning "Hmm, the
+  user..." with the `thinking` field empty. Schema-constrained calls are
+  unaffected (the grammar forbids prose), so extraction and drafting are
+  safe. Free-text generation is scrubbed by runtime.strip_reasoning(). Thinking mode is toggled per-request for calculation tasks at
+  zero extra VRAM cost — same weights, different sampling path.

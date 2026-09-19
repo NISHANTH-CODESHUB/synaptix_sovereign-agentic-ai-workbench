@@ -1,0 +1,32 @@
+id: qwen25-coder-3b
+serve_name: qwen2.5-coder:3b
+family: qwen2.5-coder
+params: "3.1B"
+license: apache-2.0
+runtime: ollama
+tier: small
+modalities: [text]
+tool_calling: json_schema
+context: {native: 32768, served: 4096}
+footprint:
+  weights_mib: 1860
+  kv_mib_per_1k_tok: {q8_0: 44}
+  compute_buffer_mib: 190
+  total_mib: 2550
+  load_cost_s: 4.5
+  measured_tps: null      # filled by scripts/bench_models.py
+skills:
+  general_qa: 55
+  doc_summarise: 48
+  structured_extract: 62
+  doc_draft: 45
+  code_write: 82
+  code_debug: 79
+  calculation: 63
+  kb_qa: 50
+  vision_doc: 0
+  vision_drawing: 0
+roles: [code]
+notes: >
+  Fill-in-middle + repo-level pretraining. Beats the 4B generalist on code by a
+  wide margin at less VRAM. Upgrades to qwen2.5-coder:7b on the 6 GiB profile.
