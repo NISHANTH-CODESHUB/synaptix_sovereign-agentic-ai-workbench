@@ -1,6 +1,5 @@
-# SynaptiX — Sovereign On-Premise Agentic AI Workbench
+# SOVEREIGNEDGE— Sovereign On-Premise Agentic AI Workbench
 
-Smart India Hackathon 2026 · Problem Statement 26117 (MRPL / Ministry of Petroleum & Natural Gas) · Team SynaptiX
 
 A self-hosted, air-gapped AI workbench for refineries, PSUs and defence-linked
 manufacturing. Multi-model, agentic, multimodal, and provably offline.
